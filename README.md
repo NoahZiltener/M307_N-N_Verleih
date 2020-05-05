@@ -32,10 +32,22 @@
 | Formularfeld | Validierung | zwingend |
 | ----------- | ----------- | :---: |
 | Vorname | Keine Sonder Zeichen |✅|
+| Name | Keine Sonder Zeichen |✅|
+| Telefon | Keine Sonder Zeichen ||
+| Email | Keine Sonder Zeichen |✅|
+| Mitgliedschaftsstatus | - |✅|
+| Film | - |✅|
 #### Edit View Validierung
 | Formularfeld | Validierung | zwingend |
 | ----------- | ----------- | :---: |
 | Vorname | Keine Sonder Zeichen |✅|
+| Name | Keine Sonder Zeichen |✅|
+| Telefon | Keine Sonder Zeichen ||
+| Email | Keine Sonder Zeichen |✅|
+| Mitgliedschaftsstatus | - |✅|
+| Film | - |✅|
+| Ausleihfrist | - ||
+| Status | - |✅|
 ### Datenbank
 #### movies
 | Bezeichnung | Typ |
