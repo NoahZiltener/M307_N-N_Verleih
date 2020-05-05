@@ -74,3 +74,14 @@
 | loan_period | int |
 ### Testfälle
 ### Roadmap
+| 05.05.2020            | 06.05.2020                     | 07.05.2020                             |
+|-----------------------|--------------------------------|----------------------------------------|
+|                       | Formulare-Theorie              | Datenbankanbindung                     | 
+|                       | Formular-Aufgaben              | Testing                                |
+|                       | Datenverarbeitung in PHP       | Erarbeiten: Web Application Security   | 
+|                       | Clientseitige Scriptsprache    |                                        |
+|                       |                                |                                        | 
+| Git Repo erstellen        | JavaScript-Grundlagen          | Präsentation: Web Application Security | 
+| Mokups erstellen       | Javascript-Aufgaben            | Start der Projektarbeit                |
+| Testfälle erstellen          | Datenvalidierung in JavaScript |                                        |
+| Validierung beschrieben                      | **Prüfung 1**: Theorie         |                                        |
