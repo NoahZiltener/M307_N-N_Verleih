@@ -83,7 +83,7 @@
 |                       | Router    |                       Updateseite(View                 |
 |                       | Welcomeseite (View) |                                        | 
 |                       |                                |                                        | 
-| Git Repo erstellen    | Noah: Createseite (Controller)          | Noah: Testing, Feinschliff | 
-| Mokups erstellen       | Nick: Welcomeseite (Controller)            | Nick: Testing, Feinschliff               |
-| Testfälle erstellen     | 14:30Uhr Zwischengespräch mit Auftraggeber |                                        |
-| Validierung beschrieben |         |                                        |
+| Git Repo erstellen    | Noah: Createseite (Controller)          | Noah: Testing | 
+| Mokups erstellen       | Nick: Welcomeseite (Controller)            | Feinschliff               |
+| Testfälle erstellen     | 14:30Uhr Zwischengespräch mit Auftraggeber | Nick: Testing                                       |
+| Validierung beschrieben |         |                                        | Feinschliff
