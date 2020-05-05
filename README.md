@@ -76,14 +76,14 @@
 ### Roadmap
 | 05.05.2020            | 06.05.2020                     | 07.05.2020                             |
 |-----------------------|--------------------------------|----------------------------------------|
-|                       | Noah : Datenbank aufsetzten    | Datenbankanbindung                     | 
-|                       | Models                         | Testing                                |
-|                       | Createseite (View)             | Testing                                |
-|                       | Nick: Alle Seiten Vorbereiten                          | Erarbeiten: Web Application Security   | 
-|                       | Router    |                                        |
-|                       | Welcomeseite (View)                               |                                        | 
+|                       | Noah : Datenbank aufsetzten    | Noah:  Createseite (Controller)                   | 
+|                       | Models                         | Updateseite (Controller)                                |
+|                       | Createseite (View)             |                                 |
+|                       | Nick: Alle Seiten Vorbereiten  | Nick: Welcomeseite (Controller)  | 
+|                       | Router    |                       Updateseite(View                 |
+|                       | Welcomeseite (View) |                                        | 
 |                       |                                |                                        | 
-| Git Repo erstellen        | Noah: Createseite (Controller)          | Präsentation: Web Application Security | 
-| Mokups erstellen       | Nick: Welcomeseite (Controller)            | Start der Projektarbeit                |
-| Testfälle erstellen          | 14:30Uhr Zwischengespräch mit Auftraggeber |                                        |
-| Validierung beschrieben                      | **Prüfung 1**: Theorie         |                                        |
+| Git Repo erstellen    | Noah: Createseite (Controller)          |  | Noah: Testing, Feinschliff
+| Mokups erstellen       | Nick: Welcomeseite (Controller)            | Nick: Testing, Feinschliff               |
+| Testfälle erstellen     | 14:30Uhr Zwischengespräch mit Auftraggeber |                                        |
+| Validierung beschrieben |         |                                        |
