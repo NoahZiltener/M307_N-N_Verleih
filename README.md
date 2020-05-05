@@ -76,12 +76,14 @@
 ### Roadmap
 | 05.05.2020            | 06.05.2020                     | 07.05.2020                             |
 |-----------------------|--------------------------------|----------------------------------------|
-|                       | Formulare-Theorie              | Datenbankanbindung                     | 
-|                       | Formular-Aufgaben              | Testing                                |
-|                       | Datenverarbeitung in PHP       | Erarbeiten: Web Application Security   | 
-|                       | Clientseitige Scriptsprache    |                                        |
+|                       | Noah : Datenbank aufsetzten    | Datenbankanbindung                     | 
+|                       | Models                         | Testing                                |
+|                       | Createseite (View)             | Testing                                |
+|                       | Nick: Alle Seiten Vorbereiten                          | Erarbeiten: Web Application Security   | 
+|                       | Router    |                                        |
+|                       | Welcomeseite (View)                               |                                        | 
 |                       |                                |                                        | 
-| Git Repo erstellen        | JavaScript-Grundlagen          | Präsentation: Web Application Security | 
-| Mokups erstellen       | Javascript-Aufgaben            | Start der Projektarbeit                |
-| Testfälle erstellen          | Datenvalidierung in JavaScript |                                        |
+| Git Repo erstellen        | Noah: Createseite (Controller)          | Präsentation: Web Application Security | 
+| Mokups erstellen       | Nick: Welcomeseite (Controller)            | Start der Projektarbeit                |
+| Testfälle erstellen          | 14:30Uhr Zwischengespräch mit Auftraggeber |                                        |
 | Validierung beschrieben                      | **Prüfung 1**: Theorie         |                                        |
