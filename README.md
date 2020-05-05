@@ -14,7 +14,7 @@
 | Telefon | Telefonnummer des Kunden |Text|
 | Email | Email des Kunden |Text|
 | Mitgliedschaftsstatus | Mitgliedschaftsstatus des Kunden |Combobox|
-| Ausleihfrist | Ausleihfrist des Filmes |Readonly|
+| Ausleihfrist | Ausleihfrist des Filmes |Text|
 | Film | Film welcher der Kunde ausgelehnt hat |Combobox|
 | Status | Status des Filmes |Combobox|
 #### Create View
