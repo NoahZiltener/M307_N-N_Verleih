@@ -85,5 +85,5 @@
 |                       |                                |                                        | 
 | Git Repo erstellen    | Noah: Createseite (Controller)          | Noah: Testing | 
 | Mokups erstellen       | Nick: Welcomeseite (Controller)            | Feinschliff               |
-| Testfälle erstellen     | 14:30Uhr Zwischengespräch mit Auftraggeber | Nick: Testing                                       |
-| Validierung beschrieben |         |                                        | Feinschliff
+| Testfälle erstellen     | 14:30Uhr Zwischengespräch mit Auftraggeber | Nick: Testing       |
+| Validierung beschrieben |         |               Feinschliff     | 
