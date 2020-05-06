@@ -80,10 +80,10 @@ class Loan
         $statement->bindParam(':lastname', $this->lastname, PDO::PARAM_STR);
         $statement->bindParam(':phone', $this->phone, PDO::PARAM_STR);
         $statement->bindParam(':email', $this->email, PDO::PARAM_STR);
-        $statement->bindParam(':loandate', $this->countOfRates, PDO::PARAM_INT);
-        $statement->bindParam(':returndate', $this->deadline, PDO::PARAM_STR);
-        $statement->bindParam(':returned', $this->fk_creditdealsId, PDO::PARAM_BOOL);
-        $statement->bindParam(':fk_movie', $this->fk_statusId, PDO::PARAM_INT);
+        $statement->bindParam(':loandate', $this->loandate, PDO::PARAM_INT);
+        $statement->bindParam(':returndate', $this->returndate, PDO::PARAM_STR);
+        $statement->bindParam(':returned', $this->returned, PDO::PARAM_BOOL);
+        $statement->bindParam(':fk_movie', $this->movie->movieid, PDO::PARAM_INT);
 
         return $statement->execute();
     }
