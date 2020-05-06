@@ -52,25 +52,26 @@
 #### movies
 | Bezeichnung | Typ |
 | ----------- | ----------- |
-| id | int(11) |
+| movieid | int PRIMARY KEY AUTO_INCREMENT |
 | title | varchar(255) NOT NULL|
 #### loans
 | Bezeichnung | Typ |
 | ----------- | ----------- |
-| id | int |
-| firstname | varchar(255) NOT NULL|
-| lastname | varchar(255) NOT NULL|
-| email | varchar(255) NOT NULL|
-| loandate | date |
-| returndate | date |
-| movie | int |
-| status | bool |
+| loanid | int PRIMARY KEY AUTO_INCREMENT |
+| firstname | varchar(50) NOT NULL|
+| lastname | varchar(50) NOT NULL|
+| phone | varchar(50)|
+| email | varchar(80) NOT NULL|
+| loandate | date not null |
+| returndate | date not null |
+| returned | boolean not null |
+| fk_movie | int not null |
 #### memberships 
 | Bezeichnung | Typ |
 | ----------- | ----------- |
-| id | int |
+| membershipid | int PRIMARY KEY AUTO_INCREMENT |
 | membership	 | varchar(255) NOT NULL |
-| loan_period | int |
+| loanperiod | int NOT NULL |
 ### Testfälle
 #### Testfälle 1
 ```
