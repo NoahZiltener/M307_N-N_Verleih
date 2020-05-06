@@ -1,6 +1,6 @@
 <?php
 
-class Memebership
+class Membership
 {
     public $membershipid;
     public $membership;
@@ -10,7 +10,7 @@ class Memebership
     {
         $this->membershipid = $membershipid;
         $this->membership = $membership;
-        $this->membership = $loanperiod;
+        $this->loanperiod = $loanperiod;
     }
 
     public static function getMemebershipById($membershipid)
@@ -21,7 +21,7 @@ class Memebership
         $results = $statement->fetchAll();
 
         $membershipid = $results[0];
-        return Memebership::dbResultTomembership($membershipid);
+        return Membership::dbResultTomembership($membershipid);
     }
 
     public static function getAllMemebership()
@@ -31,12 +31,12 @@ class Memebership
         $results = $statement->fetchAll();
         $membershipids = [];
         foreach($results as $membership){
-            $membershipids[] =  Memebership::dbResultTomembership($membership);
+            $membershipids[] =  Membership::dbResultTomembership($membership);
         }
         return $membershipids;
     }
 
     private static function dbResultTomembership($dbr){
-        return new Memebership($dbr['membershipid'], $dbr['membership'], $dbr['loanperiod']);
+        return new Membership($dbr['membershipid'], $dbr['membership'], $dbr['loanperiod']);
     }
 }
