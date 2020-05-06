@@ -4,9 +4,9 @@
 ## Konzeptionierung
 ### Formulare
 #### Home View
-![Picture Homescreen](https://github.com/SwissPvP2003/M307_N-N_Verleih/blob/master/documation/WelcomeScreen.png)
+![Picture Homescreen](res/WelcomeScreen.png)
 #### Edit View
-![Picture EditView](https://github.com/SwissPvP2003/M307_N-N_Verleih/blob/master/documation/EditScreen.png)
+![Picture EditView](res/EditScreen.png)
 | Bezeichnung | Information | Typ |
 | ----------- | ----------- | --- |
 | Vorname | Vorname des Kunden |Text|
@@ -18,7 +18,7 @@
 | Film | Film welcher der Kunde ausgelehnt hat |Combobox|
 | Status | Status des Filmes |Combobox|
 #### Create View
-![Picture CreatView](https://github.com/SwissPvP2003/M307_N-N_Verleih/blob/master/documation/AusleihScreen.png)
+![Picture CreatView](res/AusleihScreen.png)
 | Bezeichnung | Information | Typ |
 | ----------- | ----------- | --- |
 | Vorname | Vorname von Kunden |Text|
