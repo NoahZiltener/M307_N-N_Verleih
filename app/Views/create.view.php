@@ -29,13 +29,13 @@
             <li>
                 <label for="membership">Mitgliedschaftsstatus</label>
                 <select name="membership" class="field-select">
-                    <?php foreach ($meberships as $mebership) { ?>
-                        <option value="<?= $mebership->membershipid ?>"><?= $mebership->membership ?></option>
+                    <?php foreach ($meberships as $membership) { ?>
+                        <option value="<?= $membership->membershipid ?>"><?= $membership->membership ?></option>
                     <?php } ?>
                 </select>
             </li>
             <li>
-                <label for="returndate" >Ausleifrist<span class="required">*</span></label>
+                <label for="returndate" >Ausleihfrist<span class="required">*</span></label>
                 <input type="date" name="returndate" class="field-long" readonly />
             </li>
             <li>
