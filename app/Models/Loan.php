@@ -28,18 +28,15 @@ class Loan
         $this->movie = $movie;
     }
 
-    public function getLoanById($loanid)
+    public static function getLoanById($loanid)
     {
         $statement = connectToDatabase()->prepare('SELECT * FROM loans WHERE loanid = :loanid');
         $statement->bindParam(':loanid', $loanid, PDO::PARAM_INT);
         $statement->execute();
         $results = $statement->fetchAll();
 
-        $loans = [];
-        foreach($results as $loan){
-            $loans[] =  Loan::dbResultToLoan($loan);
-        }
-        return $loans;
+        $loan = $results[0];
+        return Loan::dbResultToLoan($loan);
     }
 
     public static function getAllLoans()
