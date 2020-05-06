@@ -10,9 +10,11 @@
 
 <body>
 
-    <h1>Home</h1>
+    <h1>Vidicted</h1>
 
     <h2>Videotheke</h2>
+
+    <a href="create"><button>Neue Ausleihe</button></a>
 
     <table>
         <tr>
@@ -22,9 +24,22 @@
             <th class="tableTitle">Ausleihstatus</th>
             <th class="tableTitle">Bearbeiten</th>
         </tr>
+        <?php foreach ($loans as $loan) {
+            $emoji = ($loan->returnDate >= date("Y-m-d") ? '😁' : '😠');
+        ?>
+            <tr>
+                <td><?= $loan->firstname . ' ' . $loan->lastname ?></td>
+                <td><?= $loan->movie->title ?></td>
+                <td><?= $loan->returnDate ?></td>
+                <td><?= $emoji ?></td>
+                <td><a href="update?loanid=<?= $loan->loanid ?>">
+                        <button id="btnEdit">
+                            <img id="editImg" src="res/edit-tools.png" alt="edit">
+                        </button></a></td>
+            </tr>
+        <?php } ?>
     </table>
 
-    <a href="create"><button>Neue Ausleihe</button></a>
 
 </body>
 

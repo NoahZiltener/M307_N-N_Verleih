@@ -22,8 +22,13 @@ table {
     background-color: #F089CF;
 }
 
-th{
+th, td{
     padding: 10px 15px;
+    text-align: center;
+}
+
+tr{
+    border: 1px solid;
 }
 
 .tableTitle {
@@ -36,7 +41,6 @@ button {
     cursor: pointer;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    margin-right: 5%;
     float: right;
     font-size: 16px;
     border-radius: 12px;
@@ -117,5 +121,18 @@ select{
 	color: #fff;
 }
 .form-style-1 .required{
-	color:red;
+    color:red;
+}
+.column {
+    margin-left: 10%;
+}
+
+#btnEdit{
+    float: none;
+    background: transparent;
+}
+
+#editImg{
+    width: 25px;
+    height: 25px;
 }
