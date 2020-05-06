@@ -58,17 +58,13 @@
 | Bezeichnung | Typ |
 | ----------- | ----------- |
 | id | int |
+| firstname | varchar(255) NOT NULL|
+| lastname | varchar(255) NOT NULL|
+| email | varchar(255) NOT NULL|
 | loandate | date |
 | returndate | date |
 | movie | int |
 | status | bool |
-#### customers
-| Bezeichnung | Typ |
-| ----------- | ----------- |
-| id | int |
-| firstname | varchar(255) NOT NULL|
-| lastname | varchar(255) NOT NULL|
-| email | varchar(255) NOT NULL|
 #### memberships 
 | Bezeichnung | Typ |
 | ----------- | ----------- |
