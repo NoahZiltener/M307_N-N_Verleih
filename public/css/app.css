@@ -1,7 +1,32 @@
 body {
-    text-align: center;
+    margin: 1.5rem;
 }
 
-.welcome {
-    padding-top: 40vh;
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    padding: 0.625rem;
+}
+
+.tableTitle {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 5%;
+    float: right;
+}
+
+button:hover {
+    background-color: royalblue;
 }
