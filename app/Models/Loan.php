@@ -35,16 +35,11 @@ class Loan
         $statement->execute();
         $results = $statement->fetchAll();
 
-        $loan = $results[0];
-        $this->loanid = $loan['loanid'];
-        $this->firstname = $loan['firstname'];
-        $this->lastname = $loan['lastname'];
-        $this->phone = $loan['phone'];
-        $this->email = $loan['email'];
-        $this->loanDate = $loan['loanDate'];
-        $this->returnDate = $loan['returnDate'];
-        $this->returned = $loan['returned'];
-        $this->movie = Movie::getMovieById($loan['fk_movie']);
+        $loans = [];
+        foreach($results as $loan){
+            $loans[] =  Loan::dbResultToLoan($loan);
+        }
+        return $loans;
     }
 
     public static function getAllLoans()
@@ -67,8 +62,8 @@ class Loan
             $dbr['lastname'],
             $dbr['phone'],
             $dbr['email'],
-            $dbr['loanDate'],
-            $dbr['returnDate'],
+            $dbr['loandate'],
+            $dbr['returndate'],
             $dbr['returned'],
             Movie::getMovieById($dbr['fk_movie'])
         );
