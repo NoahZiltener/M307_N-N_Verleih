@@ -28,15 +28,15 @@
             </li>
             <li>
                 <label for="membership">Mitgliedschaftsstatus</label>
-                <select name="membership" class="field-select">
+                <select name="membership" id="membership" class="field-select" onchange="calculateReturndate()">
                     <?php foreach ($meberships as $mebership) { ?>
-                        <option value="<?= $mebership->membershipid ?>"><?= $mebership->membership ?></option>
+                        <option value="<?= $mebership->loanperiod?>"><?= $mebership->membership ?></option>
                     <?php } ?>
                 </select>
             </li>
             <li>
                 <label for="returndate" >Ausleifrist<span class="required">*</span></label>
-                <input type="date" name="returndate" class="field-long" readonly />
+                <input type="date" id="returndate" name="returndate" class="field-long" readonly />
             </li>
             <li>
                 <label for="movie" >Film<span class="required">*</span></label>
