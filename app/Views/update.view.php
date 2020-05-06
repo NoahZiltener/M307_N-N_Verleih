@@ -12,6 +12,7 @@
 <h2>Ausleihe bearbeiten</h2>
 
 <form action="update" method="post">
+        <input name="loanid" type="hidden" value="<?=$movieloan->loanid?>" />
         <ul class="form-style-1">
             <li>
                 <label for="firstname">Name<span class="required">*</span></label>
