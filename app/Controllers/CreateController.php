@@ -13,6 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Location: home');
 }
 
-$meberships = Membership::getAllMemebership();
+$memberships = Membership::getAllMemebership();
 $movies = Movie::getAllMovies();
 require 'app/Views/create.view.php';

@@ -4,7 +4,7 @@ function calculateReturndate() {
     if (days != null) {
         let returnDate = new Date();
         returnDate.setDate(returnDate.getDate() + parseInt(days, 10));
-        
+
         let day = returnDate.getDate();
         if (day < 10)
             day = '0' + day;
@@ -15,4 +15,9 @@ function calculateReturndate() {
 
         document.getElementById("returndate").value = year + '-' + month + '-' + day;
     }
+}
+
+
+function cancel() {
+    window.location = 'home';
 }

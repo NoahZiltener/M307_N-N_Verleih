@@ -29,13 +29,13 @@
             <li>
                 <label for="membership">Mitgliedschaftsstatus</label>
                 <select name="membership" id="membership" class="field-select" onchange="calculateReturndate()">
-                    <?php foreach ($meberships as $mebership) { ?>
-                        <option value="<?= $mebership->loanperiod?>"><?= $mebership->membership ?></option>
+                    <?php foreach ($memberships as $membership) { ?>
+                        <option value="<?= $membership->loanperiod?>"><?= $membership->membership ?></option>
                     <?php } ?>
                 </select>
             </li>
             <li>
-                <label for="returndate" >Ausleifrist<span class="required">*</span></label>
+                <label for="returndate" >Ausleihfrist<span class="required">*</span></label>
                 <input type="date" id="returndate" name="returndate" class="field-long" readonly />
             </li>
             <li>
