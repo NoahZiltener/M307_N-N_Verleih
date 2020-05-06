@@ -1,5 +1,7 @@
 body {
     margin: 1.5rem;
+    background: #89CFF0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
 }
 
 h1 {
@@ -12,6 +14,11 @@ table {
     border-spacing: 0;
     width: 100%;
     padding: 0.625rem;
+    background-color: #F089CF;
+}
+
+th{
+    padding: 10px 15px;
 }
 
 .tableTitle {
@@ -19,14 +26,19 @@ table {
 }
 
 button {
+    background-color: #F089CF;
     border: none;
     cursor: pointer;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     margin-right: 5%;
     float: right;
+    font-size: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 15px 32px;
 }
 
 button:hover {
-    background-color: royalblue;
+    background-color: #CA55A4;
 }
