@@ -53,7 +53,7 @@ class Loan
 
     private static function dbResultToLoan($dbr)
     {
-        return new Movie(
+        return new Loan(
             $dbr['loanid'],
             $dbr['firstname'],
             $dbr['lastname'],
