@@ -1,8 +1,7 @@
 <?php
-require_once "app/Models/Loan.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if(isset($_POST['finished'])){
+    if (isset($_POST['finished'])) {
         foreach ($_POST['finished'] as $loanid) {
             $loan = Loan::getLoanById($loanid);
             $loan->returned = true;

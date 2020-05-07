@@ -34,7 +34,7 @@ class Loan
         $statement->execute();
         $results = $statement->fetch();
 
-        return Loan::dbResultToLoan($results);
+        return Loan::ResultToLoan($results);
     }
 
     public static function getAllLoans()
@@ -44,12 +44,12 @@ class Loan
         $results = $statement->fetchAll();
         $loans = [];
         foreach ($results as $loan) {
-            $loans[] =  Loan::dbResultToLoan($loan);
+            $loans[] =  Loan::ResultToLoan($loan);
         }
         return $loans;
     }
 
-    private static function dbResultToLoan($dbr)
+    private static function ResultToLoan($dbr)
     {
         return new Loan(
             $dbr['loanid'],
@@ -97,7 +97,7 @@ class Loan
         $statement->bindParam(':lastname', $this->lastname, PDO::PARAM_STR);
         $statement->bindParam(':phone', $this->phone, PDO::PARAM_STR);
         $statement->bindParam(':email', $this->email, PDO::PARAM_STR);
-        $statement->bindParam(':loandate', $this->loanDate, PDO::PARAM_INT);
+        $statement->bindParam(':loandate', $this->loanDate, PDO::PARAM_STR);
         $statement->bindParam(':returndate', $this->returnDate, PDO::PARAM_STR);
         $statement->bindParam(':returned', $this->returned, PDO::PARAM_BOOL);
         $statement->bindParam(':fk_movie', $this->movie->movieid, PDO::PARAM_INT);
@@ -106,7 +106,8 @@ class Loan
         return $statement->execute();
     }
 
-    public function validate(){
+    public function validate()
+    {
         $errors = [];
         if (strlen($this->firstname) < 1) {
             $errors[] = "Vorname muss mindestens zwei Zeichen beinhalten.";
@@ -114,7 +115,7 @@ class Loan
         if (strlen($this->lastname) < 1) {
             $errors[] = "Nachname muss mindestens zwei Zeichen beinhalten.";
         }
-        if (preg_replace("/[^\+\-(\)\  0-9]/", '', $this->phone) != $this->phone){
+        if (preg_replace("/[^\+\-(\)\  0-9]/", '', $this->phone) != $this->phone) {
             $errors[] = "Invalide Telefonnummer";
         }
         if (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
@@ -126,14 +127,12 @@ class Loan
         if (strlen($this->movie->movieid < 1)) {
             $errors[] = "Invalider Film";
         }
-        if(!isset($this->loanDate)){
+        if (!isset($this->loanDate)) {
             $errors[] = "Ausleihdatumdatum nicht gesetzt";
         }
-        if(!isset($this->returnDate)){
+        if (!isset($this->returnDate)) {
             $errors[] = "Rückgabedatum nicht gesetzt";
         }
         return $errors;
     }
-
-
 }

@@ -21,7 +21,7 @@ class Membership
         $results = $statement->fetchAll();
 
         $membershipid = $results[0];
-        return Membership::dbResultTomembership($membershipid);
+        return Membership::ResultTomembership($membershipid);
     }
 
     public static function getAllMemebership()
@@ -30,13 +30,18 @@ class Membership
         $statement->execute();
         $results = $statement->fetchAll();
         $membershipids = [];
-        foreach($results as $membership){
-            $membershipids[] =  Membership::dbResultTomembership($membership);
+        foreach ($results as $membership) {
+            $membershipids[] =  Membership::ResultTomembership($membership);
         }
         return $membershipids;
     }
 
-    private static function dbResultTomembership($dbr){
-        return new Membership($dbr['membershipid'], $dbr['membership'], $dbr['loanperiod']);
+    private static function ResultTomembership($dbr)
+    {
+        return new Membership(
+            $dbr['membershipid'],
+            $dbr['membership'],
+            $dbr['loanperiod']
+        );
     }
 }

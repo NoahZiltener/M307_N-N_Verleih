@@ -7,6 +7,7 @@ body {
 h1 {
     text-align: center;
     padding: 1rem;
+    cursor: pointer;
 }
 
 h2 {
@@ -22,12 +23,13 @@ table {
     background-color: #F089CF;
 }
 
-th, td{
+th,
+td {
     padding: 10px 15px;
     text-align: center;
 }
 
-tr{
+tr {
     border: 1px solid;
 }
 
@@ -57,28 +59,30 @@ input {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-  }
-
-  .form-style-1 {
-	margin:10px auto;
-	max-width: 400px;
-	padding: 20px 12px 10px 20px;
-	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+.form-style-1 {
+    margin: 10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
 .form-style-1 li {
-	padding: 0;
-	display: block;
-	list-style: none;
-	margin: 10px 0 0 0;
-}
-.form-style-1 label{
-	margin:0 0 3px 0;
-	padding:0px;
-	display:block;
-	font-weight: bold;
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
 }
 
-.form-style-1 input[type=text], 
+.form-style-1 label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-style-1 input[type=text],
 .form-style-1 input[type=date],
 .form-style-1 input[type=datetime],
 .form-style-1 input[type=number],
@@ -86,67 +90,80 @@ input {
 .form-style-1 input[type=time],
 .form-style-1 input[type=url],
 .form-style-1 input[type=email],
-textarea, 
-select{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	border:1px solid #BEBEBE;
-	padding: 7px;
-	margin:0px;
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
-	outline: none;	
+textarea,
+select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
 }
 
-.form-style-1 .field-divided{
-	width: 49%;
+.form-style-1 .field-divided {
+    width: 49%;
 }
 
-.form-style-1 .field-long{
-	width: 100%;
+.form-style-1 .field-long {
+    width: 100%;
 }
-.form-style-1 .field-select{
-	width: 100%;
+
+.form-style-1 .field-select {
+    width: 100%;
 }
-.form-style-1 .field-textarea{
-	height: 100px;
+
+.form-style-1 .field-textarea {
+    height: 100px;
 }
-.form-style-1 input[type=submit], .form-style-1 input[type=button]{
-	background: #F089CF;
-	padding: 8px 15px 8px 15px;
-	border: none;
-	color: #fff;
+
+.form-style-1 input[type=submit],
+.form-style-1 input[type=button] {
+    background: #F089CF;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
 }
-.form-style-1 .required{
-    color:red;
+
+.form-style-1 .required {
+    color: red;
 }
+
 .column {
     margin-left: 10%;
 }
 
-#btnEdit{
+#btnEdit {
     float: none;
     background: transparent;
 }
 
-#editImg{
+#editImg {
     width: 25px;
     height: 25px;
 }
 
-#cancelButton{
+#cancelButton {
     float: left;
 }
 
-.error{
+#email {
+    margin-bottom: 7%;
+}
+
+.error {
     color: red;
 }
 
-h1{
-    cursor: pointer;
+#selected {
+    float: left;
 }
 
-a:visited { text-decoration: none; color:black; }
+a:visited {
+    text-decoration: none;
+    color: black;
+}

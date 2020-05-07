@@ -9,15 +9,11 @@
 </head>
 
 <body>
-
     <h1><a href="home">Vidicted</a></h1>
-
     <h2>Videotheke</h2>
-
-    <a href="create"><button>Neue Ausleihe</button></a>
-
     <form action="home" method="POST">
-    <button type="submit">Zurückgebracht</button>
+        <a href="create"><button type="button">Neue Ausleihe</button></a>
+        <button id="selected" type="submit">Ausgewählte abschlissen</button>
         <table>
             <tr>
                 <th class="tableTitle"></th>
@@ -36,16 +32,17 @@
                     <td><?= $loan->movie->title ?></td>
                     <td><?= $loan->returnDate ?></td>
                     <td><?= $emoji ?></td>
-                    <td><a href="update?loanid=<?= $loan->loanid ?>">
-                            <button id="btnEdit">
-                                <img id="editImg" src="res/edit-tools.png" alt="edit">
-                            </button></a></td>
+                    <td>
+                        <a href="update?loanid=<?= $loan->loanid ?>">
+                            <button id="btnEdit" type="button">
+                                <img id="editImg" src="public/assets/edit-tools.png" alt="edit">
+                            </button>
+                        </a>
+                    </td>
                 </tr>
             <?php } ?>
         </table>
     </form>
-
-
 </body>
 
 </html>

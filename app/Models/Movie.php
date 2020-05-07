@@ -19,7 +19,7 @@ class Movie
         $results = $statement->fetchAll();
 
         $movie = $results[0];
-        return Movie::dbResultToMovie($movie);
+        return Movie::ResultToMovie($movie);
     }
 
     public static function getAllMovies()
@@ -28,14 +28,17 @@ class Movie
         $statement->execute();
         $results = $statement->fetchAll();
         $movies = [];
-        foreach($results as $movie){
-            $movies[] =  Movie::dbResultToMovie($movie);
+        foreach ($results as $movie) {
+            $movies[] =  Movie::ResultToMovie($movie);
         }
         return $movies;
     }
 
-    private static function dbResultToMovie($dbr){
-        return new Movie($dbr['movieid'], $dbr['title']);
+    private static function ResultToMovie($dbr)
+    {
+        return new Movie(
+                $dbr['movieid'],
+                $dbr['title']
+            );
     }
-
 }

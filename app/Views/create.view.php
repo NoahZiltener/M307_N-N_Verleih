@@ -15,32 +15,32 @@
         <ul class="form-style-1">
             <li>
                 <label for="firstname">Name<span class="required">*</span></label>
-                <input type="text" name="firstname" class="field-divided" placeholder="Vorname" value="<?= $loan->firstname ?>" />
-                <input type="text" name="lastname" class="field-divided" placeholder="Nachname" value="<?= $loan->lastname ?>" />
+                <input type="text" name="firstname" id="firstname" class="field-divided" placeholder="Vorname" value="<?= $loan->firstname ?>" required />
+                <input type="text" name="lastname" id="lastname" class="field-divided" placeholder="Nachname" value="<?= $loan->lastname ?>" required />
             </li>
             <li>
                 <label for="phone">Telefon</label>
-                <input type="text" name="phone" class="field-long" value="<?= $loan->phone ?>"/>
+                <input type="text" name="phone" id="phone" class="field-long" value="<?= $loan->phone ?>" />
             </li>
             <li>
                 <label for="email">Email <span class="required">*</span></label>
-                <input type="email" name="email" class="field-long" value="<?= $loan->email ?>"/>
+                <input type="email" name="email" id="email" class="field-long" value="<?= $loan->email ?>" required />
             </li>
             <li>
-                <label for="membership">Mitgliedschaftsstatus</label>
-                <select name="membership" id="membership" class="field-select" onchange="calculateReturndate()">
+                <label for="membership">Mitgliedschaftsstatus<span class="required">*</span></label>
+                <select name="membership" id="membership" class="field-select" onchange="calculateReturndate()" required>
                     <?php foreach ($memberships as $membership) { ?>
                         <option value="<?= $membership->loanperiod ?>"><?= $membership->membership ?></option>
                     <?php } ?>
                 </select>
             </li>
             <li>
-                <label for="returndate">Ausleihfrist<span class="required">*</span></label>
+                <label for="returndate">Ausleihfrist</label>
                 <input type="date" id="returndate" name="returndate" class="field-long" readonly />
             </li>
             <li>
                 <label for="movie">Film<span class="required">*</span></label>
-                <select name="movie" class="field-select">
+                <select name="movie" id="movie" class="field-select" required>
                     <?php foreach ($movies as $movie) { ?>
                         <option value="<?= $movie->movieid ?>"><?= $movie->title ?></option>
                     <?php } ?>
@@ -54,7 +54,7 @@
                 </ul>
             </li>
             <li>
-                <button type="button" id="cancelButton" onclick="cancel()">abbrechen</button>
+                <button type="button" id="cancelButton" onclick="cancel()">Abbrechen</button>
                 <button type="submit">Erstellen</button>
             </li>
         </ul>
