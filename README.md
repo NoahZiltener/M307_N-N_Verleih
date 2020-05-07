@@ -77,43 +77,43 @@ der schriftlichen Prüfung zur unserer Endnote. Wir (Noah Ziltener und Nick Durr
 ### Testfälle
 #### Testfälle 1
 ```
-GEGEBEN       Erstelle Seite ist geöffnet und alle Daten sind richtig richtig eingegeben
-WENN          Ich drücke auf den Erstellen Button
-DANN          Der Videoausleih wir in der Datenbank erstellt und ich werde auf die Home Seite umgeleitet
+GEGEBEN       Erstellen Seite ist geöffnet und alle Daten sind korrekt eingegeben
+WENN          ich drücke auf den Erstellen Button
+DANN          der Videoausleih wir in der Datenbank erstellt und ich werde auf die Home Seite umgeleitet
 ```
 #### Testfälle 2
 ```
 GEGEBEN       Ein Videoausleih ist auf der Bearbeitungsseite geöffnet
-WENN          Ich ändere den Namen des Kunden auf Tim und speichere den Ausleih
-DANN          Der Videoausleih wir in der Datenbank geändert und ich werde auf die Home Seite umgeleitet wo der Name Tim beim Videoausleih steht
+WENN          ich ändere den Namen des Kunden und speichere den Ausleih
+DANN          der Videoausleih wir in der Datenbank geändert und ich werde auf die Home Seite umgeleitet wo der Name verändert beim Videoausleih steht
 ```
 #### Testfälle 3
 ```
 GEGEBEN       Die URL der Homeseite ist im Browser eingeben
-WENN          ich die Seite lade 
+WENN          ich lade die Seite 
 DANN          sehe ich alle Ausleihen die noch nicht abgeschlossen sind
 ```
 #### Testfälle 4
 ```
-GEGEBEN       Erstelle Seite ist geöffnet
+GEGEBEN       Die Erstellen Seite ist geöffnet
 WENN          ich den Mitgliedstatus eingebe
 DANN          sehe ich das Rückgabedatum
 ```
 #### Testfälle 5
 ```
 GEGEBEN       Home Seite ist geöffnet
-WENN          eine Ausleihung fälig ist 
+WENN          eine Ausleihung das Rückgabedatum verpasst hat 
 DANN          wird das mit einem passendem Emoji angezeigt
 ```
 #### Testfälle 6
 ```
 GEGEBEN       Home Seite ist geöffnet
-WENN          eine Ausleihung noch nicht fälig ist 
+WENN          eine Ausleihung noch in der Zeitspanne ist (noch nicht zurückgebracht werden muss) 
 DANN          wird das mit einem passendem Emoji angezeigt
 ```
 #### Testfälle 7
 ```
-GEGEBEN       Erstelle Seite ist geöffnet
+GEGEBEN       Erstellen Seite ist geöffnet
 WENN          ich das Formular ohne Eingaben absende
 DANN          werden die Error Meldungen angezeigt
 ```
@@ -126,14 +126,14 @@ DANN          werden die Error Meldungen angezeigt
 #### Testfälle 9
 ```
 GEGEBEN       Home Seite ist geöffnet 
-WENN          ich erstelle 2 Ausleihungen
-DANN          wird die zuerst erstellt zu oberst angezeigt
+WENN          ich 2 Ausleihungen erstelle mit jeweils anderen Mitgliedschaftsstatus
+DANN          wird die Ausleihung welche zuerst fählig wird zuoberst angezeigt der Tabelle
 ```
 #### Testfälle 10
 ```
 GEGEBEN       Update Seite ist geöffnet
-WENN          eine Ausleihung abschliesse
-DANN          wird diese nicht mehr angezeigt
+WENN          ich den Status der Ausleihe auf "zurückgegeben" ändere
+DANN          wird diese nicht mehr angezeigt auf der Homeseite
 ```
 ### Roadmap
 | 05.05.2020            | 06.05.2020                     | 07.05.2020                             |
