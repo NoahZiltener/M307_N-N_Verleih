@@ -35,8 +35,8 @@ der schriftlichen Prüfung zur unserer Endnote. Wir (Noah Ziltener und Nick Durr
 | ----------- | ----------- | :---: |
 | Vorname | Keine Sonder Zeichen |✅|
 | Name | Keine Sonder Zeichen |✅|
-| Telefon | Keine Sonder Zeichen ||
-| Email | Keine Sonder Zeichen |✅|
+| Telefon | Nur Nummern, Leerzeichen, (), +/- ||
+| Email | Muss @ enthalten |✅|
 | Mitgliedschaftsstatus | - |✅|
 | Film | - |✅|
 #### Edit View Validierung
@@ -44,8 +44,8 @@ der schriftlichen Prüfung zur unserer Endnote. Wir (Noah Ziltener und Nick Durr
 | ----------- | ----------- | :---: |
 | Vorname | Keine Sonder Zeichen |✅|
 | Name | Keine Sonder Zeichen |✅|
-| Telefon | Keine Sonder Zeichen ||
-| Email | Keine Sonder Zeichen |✅|
+| Telefon | Nur Nummern, Leerzeichen, (), +/- ||
+| Email | Muss @ enthalten |✅|
 | Mitgliedschaftsstatus | - |✅|
 | Film | - |✅|
 | Ausleihfrist | - ||
