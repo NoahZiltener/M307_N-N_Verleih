@@ -41,7 +41,7 @@ class Loan
 
     public static function getAllLoans()
     {
-        $statement = connectToDatabase()->prepare('SELECT * FROM loans');
+        $statement = connectToDatabase()->prepare('SELECT * FROM loans WHERE returned = false');
         $statement->execute();
         $results = $statement->fetchAll();
         $loans = [];
