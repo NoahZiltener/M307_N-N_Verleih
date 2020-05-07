@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>Vidicted</h1>
+<h1><a href="home">Vidicted</a></h1>
 <h2>Ausleihe bearbeiten</h2>
 
 <form action="update" method="post">

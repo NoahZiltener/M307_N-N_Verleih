@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>Vidicted</h1>
+    <h1><a href="home">Vidicted</a></h1>
 
     <h2>Videotheke</h2>
 

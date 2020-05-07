@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Vidicted</h1>
+    <h1><a href="home">Vidicted</a></h1>
     <h2>Neue Ausleihen erfassen</h2>
     <form action="create" method="post">
         <ul class="form-style-1">

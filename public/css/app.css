@@ -144,3 +144,9 @@ select{
 .error{
     color: red;
 }
+
+h1{
+    cursor: pointer;
+}
+
+a:visited { text-decoration: none; color:black; }
