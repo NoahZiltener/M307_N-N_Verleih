@@ -16,10 +16,9 @@ class Movie
         $statement = connectToDatabase()->prepare('SELECT * FROM movies WHERE movieid = :movieid');
         $statement->bindParam(':movieid', $movieid, PDO::PARAM_INT);
         $statement->execute();
-        $results = $statement->fetchAll();
+        $results = $statement->fetch();
 
-        $movie = $results[0];
-        return Movie::ResultToMovie($movie);
+        return Movie::ResultToMovie($results);
     }
 
     public static function getAllMovies()

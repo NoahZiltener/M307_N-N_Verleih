@@ -18,10 +18,9 @@ class Membership
         $statement = connectToDatabase()->prepare('SELECT * FROM memberships WHERE membershipid = :membershipid');
         $statement->bindParam(':membershipid', $membershipid, PDO::PARAM_INT);
         $statement->execute();
-        $results = $statement->fetchAll();
+        $results = $statement->fetch();
 
-        $membershipid = $results[0];
-        return Membership::ResultTomembership($membershipid);
+        return Membership::ResultTomembership($results);
     }
 
     public static function getAllMemebership()
