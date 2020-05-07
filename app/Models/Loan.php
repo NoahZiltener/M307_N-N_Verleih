@@ -39,7 +39,7 @@ class Loan
 
     public static function getAllLoans()
     {
-        $statement = connectToDatabase()->prepare('SELECT * FROM loans WHERE returned = false');
+        $statement = connectToDatabase()->prepare('SELECT * FROM loans WHERE returned = false ORDER BY returndate ASC');
         $statement->execute();
         $results = $statement->fetchAll();
         $loans = [];
@@ -113,9 +113,6 @@ class Loan
         }
         if (strlen($this->lastname) < 1) {
             $errors[] = "Nachname muss mindestens zwei Zeichen beinhalten.";
-        }
-        if (strlen($this->phone) <= 3) {
-            $errors[] = "Telefonnummer muss mindestens 3 Zeichen beinhalten.";
         }
         if (preg_replace("/[^\+\-(\)\  0-9]/", '', $this->phone) != $this->phone){
             $errors[] = "Invalide Telefonnummer";

@@ -11,13 +11,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         }
     }
 } else if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $_loanid = $_POST['loanid'];
-    $_firstname = $_POST['firstname'];
-    $_lastname = $_POST['lastname'];
-    $_phone = $_POST['phone'];
-    $_email = $_POST['email'];
-    $_movie = $_POST['movie'];
-    $_status = $_POST['status'];
+    $_loanid = htmlspecialchars($_POST['loanid']);
+    $_firstname = htmlspecialchars($_POST['firstname']);
+    $_lastname = htmlspecialchars($_POST['lastname']);
+    $_phone = htmlspecialchars($_POST['phone']);
+    $_email = htmlspecialchars($_POST['email']);
+    $_movie = htmlspecialchars($_POST['movie']);
+    $_status = htmlspecialchars($_POST['status']);
 
     $movieloan = Loan::getLoanById($_loanid);
     $movie = Movie::getMovieById($_movie);

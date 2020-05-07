@@ -2,12 +2,12 @@
 $errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $_firstname = $_POST['firstname'];
-    $_lastname = $_POST['lastname'];
-    $_phone = $_POST['phone'];
-    $_email = $_POST['email'];
-    $_returndate = $_POST['returndate'];
-    $_movie = $_POST['movie'];
+    $_firstname =  htmlspecialchars($_POST['firstname']);
+    $_lastname = htmlspecialchars($_POST['lastname']);
+    $_phone = htmlspecialchars($_POST['phone']);
+    $_email = htmlspecialchars($_POST['email']);
+    $_returndate = htmlspecialchars($_POST['returndate']);
+    $_movie = htmlspecialchars($_POST['movie']);
 
     $loan = new Loan(null, $_firstname, $_lastname, $_phone, $_email, date("yy.m.d"), $_returndate, false, Movie::getMovieById($_movie));
     $errors = $loan->validate();
