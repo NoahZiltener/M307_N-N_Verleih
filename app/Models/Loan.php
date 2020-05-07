@@ -33,7 +33,7 @@ class Loan
         $statement->bindParam(':loanid', $loanid, PDO::PARAM_INT);
         $statement->execute();
         $results = $statement->fetch();
-        
+
         return Loan::dbResultToLoan($results);
     }
 
@@ -109,12 +109,15 @@ class Loan
     public function validate(){
         $errors = [];
         if (strlen($this->firstname) < 1) {
-            $errors[] = "Vorname muss mindestens ein Zeichen beinhalten.";
+            $errors[] = "Vorname muss mindestens zwei Zeichen beinhalten.";
         }
         if (strlen($this->lastname) < 1) {
-            $errors[] = "Nachname muss mindestens ein Zeichen beinhalten.";
+            $errors[] = "Nachname muss mindestens zwei Zeichen beinhalten.";
         }
-        if (strlen($this->phone) < 10){
+        if (strlen($this->phone) <= 3) {
+            $errors[] = "Telefonnummer muss mindestens 3 Zeichen beinhalten.";
+        }
+        if (preg_replace("/[^\+\-(\)\  0-9]/", '', $this->phone) != $this->phone){
             $errors[] = "Invalide Telefonnummer";
         }
         if (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
