@@ -17,7 +17,6 @@ function calculateReturndate() {
     }
 }
 
-
 function cancel() {
     window.location = 'home';
 }

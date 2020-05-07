@@ -51,6 +51,11 @@
             </li>
         </ul>
     </form>
+    <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function(event) {
+                    calculateReturndate();
+                });
+            </script>
 </body>
 
 </html>
