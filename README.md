@@ -1,6 +1,8 @@
 # M307_N&N_Verleih
 ## Inhaltsverzeichnis
 ## Einleitung
+Im Modul 307 haben wir ein Projekt erhalten, welches uns für die letzten 2 1/2 Tage beschäftigen soll. Dieses Projekt zähl mit
+der schriftlichen Prüfung zur unserer Endnote. Wir (Noah Ziltener und Nick Durrer) haben uns dazu entschieden dieses Projekt zusammen zu machen, da wir beide verschiedene Stärken haben und denken diese gut in die Projektarbeit einfliessen lassen können. Der Auftrag ist es eine Website für eine Videotheke zu erstellen, mit den gelernten Wissen des Kurses. Die Webseite ist dazu da, für Mitarbeiter, Aufträge einfacher zu erfassen und zu bearbeiten. Zudem soll die Website eine Darstellung aller aktiven Aufträge haben.
 ## Konzeptionierung
 ### Formulare
 #### Home View
