@@ -8,7 +8,7 @@ function calculateReturndate() {
         let day = returnDate.getDate();
         if (day < 10)
             day = '0' + day;
-        let month = returnDate.getMonth();
+        let month = returnDate.getMonth() + 1;
         if (month < 10)
             month = '0' + month;
         let year = returnDate.getFullYear();
