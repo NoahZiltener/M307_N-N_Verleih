@@ -18,7 +18,6 @@ class Loan
     {
         $this->loanid = $loanid;
         $this->firstname = $firstname;
-        $this->firstname = $firstname;
         $this->lastname = $lastname;
         $this->phone = $phone;
         $this->email = $email;
@@ -106,6 +105,35 @@ class Loan
         $statement->bindParam(':loanid', $this->loanid, PDO::PARAM_INT);
 
         return $statement->execute();
+    }
+
+    public function validate(){
+        $errors = [];
+        if (strlen($this->firstname) < 1) {
+            $errors[] = "Vorname muss mindestens ein Zeichen beinhalten.";
+        }
+        if (strlen($this->lastname) < 1) {
+            $errors[] = "Nachname muss mindestens ein Zeichen beinhalten.";
+        }
+        if (strlen($this->phone) < 10){
+            $errors[] = "Invalide Telefonnummer";
+        }
+        if (!filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
+            $errors[] = "Invalide Email";
+        }
+        if (!isset($this->returned)) {
+            $errors[] = "Invalider Status";
+        }
+        if (strlen($this->movie->movieid < 1)) {
+            $errors[] = "Invalider Film";
+        }
+        if(!isset($this->loanDate)){
+            $errors[] = "Ausleihdatumdatum nicht gesetzt";
+        }
+        if(!isset($this->returnDate)){
+            $errors[] = "Rückgabedatum nicht gesetzt";
+        }
+        return $errors;
     }
 
 

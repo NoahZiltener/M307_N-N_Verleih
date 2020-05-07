@@ -1,4 +1,5 @@
 <?php
+$errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_firstname = $_POST['firstname'];
@@ -9,9 +10,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_movie = $_POST['movie'];
 
     $loan = new Loan(null, $_firstname, $_lastname, $_phone, $_email, date("yy.m.d"), $_returndate, false, Movie::getMovieById($_movie));
-    $loan->create();
-    header('Location: home');
+    $errors = $loan->validate();
+
+    if (sizeof($errors) == 0) {
+        $loan->create();
+        header('Location: home');
+    }
+    
+} else {
+    $loan = new Loan(null, '', '', '', '', '', '', false, '');
 }
+
 
 $memberships = Membership::getAllMemebership();
 $movies = Movie::getAllMovies();

@@ -140,3 +140,7 @@ select{
 #cancelButton{
     float: left;
 }
+
+.error{
+    color: red;
+}
