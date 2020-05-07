@@ -47,9 +47,16 @@
             <li>
                 <label for="status">Status<span class="required">*</span></label>
                 <select name="status" class="field-select">
-                    <option value="false">ausgeliehen</option>
-                    <option value="true">zurückgebracht</option>
+                    <option value="0">ausgeliehen</option>
+                    <option value="1">zurückgebracht</option>
                 </select>
+            </li>
+            <li>
+                <ul>
+                    <?php foreach ($errors as $error) { ?>
+                        <li class="error"><?= $error ?></li>
+                    <?php } ?>
+                </ul>
             </li>
             <li>
                 <button type="button" id="cancelButton" onclick="cancel()">abbrechen</button>

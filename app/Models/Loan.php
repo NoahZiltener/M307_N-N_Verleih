@@ -32,10 +32,9 @@ class Loan
         $statement = connectToDatabase()->prepare('SELECT * FROM loans WHERE loanid = :loanid');
         $statement->bindParam(':loanid', $loanid, PDO::PARAM_INT);
         $statement->execute();
-        $results = $statement->fetchAll();
-
-        $loan = $results[0];
-        return Loan::dbResultToLoan($loan);
+        $results = $statement->fetch();
+        
+        return Loan::dbResultToLoan($results);
     }
 
     public static function getAllLoans()

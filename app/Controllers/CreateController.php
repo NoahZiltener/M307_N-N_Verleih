@@ -16,11 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $loan->create();
         header('Location: home');
     }
-    
+
 } else {
     $loan = new Loan(null, '', '', '', '', '', '', false, '');
 }
-
 
 $memberships = Membership::getAllMemebership();
 $movies = Movie::getAllMovies();
