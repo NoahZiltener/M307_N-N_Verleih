@@ -1,5 +1,3 @@
-USE videothek;
-
 INSERT INTO movies (title) VALUES
 ('Die Reise zum Mond'),
 ('Der große Eisenbahnraub'),
