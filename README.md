@@ -6,7 +6,7 @@ der schriftlichen Prüfung zur unserer Endnote. Wir (Noah Ziltener und Nick Durr
 ## Sitemap
 | Home | Create | Update |
 | -----| ------ | ------ |
-| / | /create | /update |
+| /home | /create | /update |
 | Zeit alle offene Ausleihungen | Diese Seite dient zum erstellen von neuen Ausleihungen | Auf dieser Seite können bestehende Ausleihungen bearbeitet werden |
 ## Konzeptionierung
 ### Formulare
