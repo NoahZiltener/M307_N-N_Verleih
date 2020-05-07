@@ -50,9 +50,7 @@ der schriftlichen Prüfung zur unserer Endnote. Wir (Noah Ziltener und Nick Durr
 | Name | Keine Sonder Zeichen |✅|
 | Telefon | Nur Nummern, Leerzeichen, (), +/- ||
 | Email | Muss @ enthalten |✅|
-| Mitgliedschaftsstatus | - |✅|
 | Film | - |✅|
-| Ausleihfrist | - ||
 | Status | - |✅|
 ### Datenbank
 #### movies
